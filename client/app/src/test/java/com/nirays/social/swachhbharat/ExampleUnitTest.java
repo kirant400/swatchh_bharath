@@ -1,4 +1,4 @@
-package com.nirays.swachhbharat;
+package com.nirays.social.swachhbharat;
 
 import org.junit.Test;
 

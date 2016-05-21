@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#15CD74</color>
+    <color name="colorPrimaryDark">#00A153</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="winBackground">#EBEFF2</color>
+    <color name="tab_text_selected">#424f59</color>
+    <color name="tab_indicator">#15cd74</color>
+    <color name="tab_text">#7e8b96</color>
+    <color name="main_post_heading">#52606b</color>
+    <color name="main_post_details_text">#7c8892</color>
+    <color name="item_background">#fff</color>
+    <color name="comment_text_background">#fff</color>
+    <color name="tab_background_color">#ffffff</color>
 </resources>

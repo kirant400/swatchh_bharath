@@ -1,4 +1,4 @@
-package com.nirays.swachhbharat;
+package com.nirays.social.swachhbharat;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;

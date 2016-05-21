@@ -1,4 +1,4 @@
-package com.nirays.swachhbharat;
+package com.nirays.social.swachhbharat;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:layout_marginTop="10dp"
+    android:background="@color/item_background"
+    android:id="@+id/btnPostItem"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/image_thumbs"
+            android:src="@drawable/sample"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_thumbs"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:text="@string/location"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/main_post_heading"
+                android:background="@null"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/votes"
+                android:text="@string/votes"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/main_post_heading"
+                android:background="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/posted_on"
+                android:id="@+id/posted_on"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/main_post_details_text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:id="@+id/status"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/main_post_details_text"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/status_green"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+    <View android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="@color/winBackground"/>
+</LinearLayout>
