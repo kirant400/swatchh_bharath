@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.nirays.social.swachhbharat.adapter.ChatAdapter;
-import com.nirays.social.swachhbharat.model.ChatModel;
+import com.nirays.social.swachhbharat.model.UserModel;
 
 import java.util.ArrayList;
 
@@ -28,8 +28,8 @@ public class DetailsActivity extends AppCompatActivity {
         scaleGestureDetector = new ScaleGestureDetector(this,new ScaleListener());
     }
 
-    private ArrayList<ChatModel> generateData() {
-        ArrayList<ChatModel> models = new ArrayList<ChatModel>();
+    private ArrayList<UserModel> generateData() {
+        ArrayList<UserModel> models = new ArrayList<UserModel>();
 //        if(dataSource == null){
 //            dataSource = new ConfigDataSource(getActivity());
 //            dataSource.open();
@@ -37,11 +37,11 @@ public class DetailsActivity extends AppCompatActivity {
 
         //List<PhoneModel> configs = dataSource.getPhones(groupId);
         //for (PhoneModel phoneModel : configs) {
-        models.add(new ChatModel());
-        models.add(new ChatModel());
-        models.add(new ChatModel());
-        models.add(new ChatModel());
-        models.add(new ChatModel());
+        models.add(new UserModel());
+        models.add(new UserModel());
+        models.add(new UserModel());
+        models.add(new UserModel());
+        models.add(new UserModel());
         //}
         return models;
     }

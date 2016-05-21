@@ -8,17 +8,17 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import com.nirays.social.swachhbharat.R;
-import com.nirays.social.swachhbharat.model.ChatModel;
+import com.nirays.social.swachhbharat.model.UserModel;
 
 import java.util.ArrayList;
 
 /**
  * Created by kirant400 on 02/03/2015.
  */
-public class ChatAdapter extends ArrayAdapter<ChatModel> {
+public class ChatAdapter extends ArrayAdapter<UserModel> {
     private final Context context;
-    private final ArrayList<ChatModel> modelsArrayList;
-    public ChatAdapter(Context context, ArrayList<ChatModel> modelsArrayList) {
+    private final ArrayList<UserModel> modelsArrayList;
+    public ChatAdapter(Context context, ArrayList<UserModel> modelsArrayList) {
 
         super(context, R.layout.chat_item, modelsArrayList);
 
@@ -36,7 +36,7 @@ public class ChatAdapter extends ArrayAdapter<ChatModel> {
         // 2. Get rowView from inflater
 
         View rowView = null;
-        ChatModel model = modelsArrayList.get(position);
+        UserModel model = modelsArrayList.get(position);
         Resources res = context.getResources();
         rowView = inflater.inflate(R.layout.chat_item, parent, false);
         // 5. retrn rowView
